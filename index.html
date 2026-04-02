@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<script type="importmap">
-{
-  "imports": {
-    "three": "https://unpkg.com/three@0.128.0/build/three.module.js",
-    "three/": "https://esm.sh/three@^0.183.2/",
-    "three/addons/": "https://unpkg.com/three@0.128.0/examples/jsm/"
-  }
-}
-</script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Магазин пончиков | 3D Donut Shop</title>
@@ -245,7 +235,14 @@
     <div id="loaderMessage" class="loader" style="opacity:1;">🍩 Загрузка 3D пончиков... ожидайте</div>
 
     <!-- Подключаем Three.js и расширения -->
-    
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.128.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.128.0/examples/jsm/"
+            }
+        }
+    </script>
 
     <script type="module">
         import * as THREE from 'three';
